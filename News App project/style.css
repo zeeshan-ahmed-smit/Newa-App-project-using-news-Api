@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif
+}
+
+body {
+    background: #f6efef;
+    scroll-behavior: smooth;
+}
+
+.my-nav {
+    width: 100%;
+    background: #f8f9fa;
+    position: relative !important;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1.5px);
+
+}
+
+.my-nav p {
+    color: black;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.my-nav span {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ec0405;
+    margin-left: 10px;
+}
+
+.my-nav .input {
+    width: 450px;
+    height: 50px;
+    padding: 10px 20px;
+    outline: none;
+    font-size: 1.5em;
+    border: 1px solid #ec0405;
+    border-radius: 0.5em;
+}
+
+::placeholder {
+    color: rgb(52, 50, 50);
+}
+
+.Btn {
+    width: 200px;
+    font-size: 1.5em;
+    border: none;
+    background: transparent;
+    color: #ec0405;
+    font-weight: 600;
+    margin-top: -5px;
+    cursor: pointer;
+    border-radius: 0.5em;
+    padding: 8px 15px;
+    border: 1px solid #ec0405;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+.Btn:hover {
+    box-shadow: inset 0 0 15px #ec0405, 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.Btn:active {
+    box-shadow: none;
+}
+
+.my-nav .search-icon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    position: relative;
+    right: 50px;
+    top: 15px;
+
+}
+
+.categories-main {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.categories {
+    background: #f8f9fa;
+    height: auto;
+    width: 100%;
+    display: flex;
+    padding: 40px 100px 20px 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.categories button {
+    width: 140px;
+    font-size: 1.2em;
+    padding: 5px 5px;
+    margin-bottom: 20px !important;
+    text-transform: capitalize;
+}
+
+#arrow {
+    width: 15px;
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+
+#arrow.active {
+    transform: rotate(180deg);
+}
+
+.card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-discription {
+    width: 100%;
+    height: 15vh;
+}
+
+#heading {
+    text-transform: capitalize;
+}
+
+.main h1 {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.card {
+    height: auto !important;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 0.5em !important;
+}
+
+.card:hover {
+    transform: scale(1.04);
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.em;
+}
+
+.card-btn {
+    font-size: 1em;
+    width: 100px;
+
+}
+
+
+.btns {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 8px 32px 0 rgba(31, 38, 135, 0.37);
+    margin-top: 10px;
+}
+
+.btns button {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ec0405;
+    border-bottom: 1px solid #ec0405;
+    border-radius: 0;
+}
+
+.spinner {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner.hidden {
+    display: none;
+}
+.pop-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background-color: #ffffff;
+    border-radius: 0.5em;
+    padding: 20px 25px;
+    transition: .2s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.pop-info.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.pop-info h2 {
+    color: #0c0db0;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.pop-info .info {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #333;
+    margin: 10px 0px;
+}
+
+
+
+
+
+@media only screen and (max-width:500px) {
+    .my-nav .input {
+        width: 100%;
+    }
+}

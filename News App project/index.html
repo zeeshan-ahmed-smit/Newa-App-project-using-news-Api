@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/icone.png" type="image/x-icon">
+    <!-- <link rel="preconnect" href="./font/Times-New-Roman/times new roman bold italic.ttf"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar my-nav">
+        <div class="container-fluid" style="width: 100%;">
+            <p class="navbar-brand"><span>Daily News</span> Network</p>
+            <form class="d-flex" role="search">
+                <input class="input mt-2 mb-3" type="text" id="input" placeholder="Search">
+                <img class="search-icon" onclick="gDFSearch()" src="./images/search-interface-symbol.png"
+                    title="search">
+            </form>
+            <button id="categoriesBtn" class="Btn">Categories <img id="arrow" src="./images/arrow.png"></button>
+
+        </div>
+    </nav>
+    <div id="categoriesDiv" class="categories-main" style="display: none;">
+        <div class="categories">
+            <button class="Btn">latest</button>
+            <button class="Btn">sports</button>
+            <button class="Btn">world</button>
+            <button class="Btn">business</button>
+            <button class="Btn">entertainment</button>
+            <button class="Btn">technology</button>
+            <button class="Btn">health</button>
+        </div>
+    </div>
+    <div id="popInfo" class="pop-info">
+        <div class="card mb-5" style="width: 18rem;">
+            <img src="..." class="card-img-top card-image">
+            <div class="card-body">
+                <h5 class="card-title">aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h5>
+                <p class="card-text card-discription">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            </div>
+        </div>
+        <div class="btn-group">
+            <button id="exitBtn" class="Btn">Exit Quiz</button>
+        </div>
+    </div>
+    
+    <div class="container main mt-5">
+        <h1 id="heading">latest</h1>
+        <div id="content" class="content d-flex justify-content-evenly flex-wrap">
+        </div>
+    </div>
+    <div class="spinner"><img src="./images/spinner.gif" alt=""></div>
+    <div class="btns">
+        <button onclick="pageSize()" class="Btn">LoadMore</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
